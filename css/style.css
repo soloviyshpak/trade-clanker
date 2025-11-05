@@ -1,6 +1,150 @@
-body {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+body {
   font-family: 'Ubuntu';
   font-weight: 400;
   font-size: 24px;
+}
+.logo {
+  display: block;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  transition: scale 0.3s;
+}
+.logo:hover {
+  scale: 1.1;
+}
+.wrapper {
+  display: flex;
+}
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 30px;
+  background-color: #242524;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: sticky;
+}
+.sidebar__logo {
+  margin-bottom: 91px;
+}
+.sidebar__info {
+  margin-bottom: 154px;
+}
+.indicator {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+.sidebar__info-status {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #ff0004;
+  margin-bottom: 5px;
+}
+.sidebar__info-status--active {
+  color: #00a318;
+}
+.sidebar__info-status .indicator {
+  background: #ff0004;
+}
+.sidebar__info-status--active .indicator {
+  background: #00a318;
+}
+.sidebar__info-username {
+  color: #fafafa;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.sidebar__info-userid {
+  font-size: 16px;
+  color: #676767;
+}
+.sidebar__nav {
+  flex: 1; /* Занимает все доступное пространство */
+}
+.sidebar__nav-list {
+  padding: 15px 0;
+}
+.sidebar__nav-item {
+  width: 151px;
+  padding: 5px 12px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  transition: background-color 0.2s;
+}
+.sidebar__nav-item:hover {
+  background-color: #f5ad41;
+}
+.sidebar__nav-item--active {
+  background-color: #f5ad41;
+}
+.sidebar__nav-item:last-child {
+  margin: 0;
+}
+.sidebar__nav-link {
+  display: inline-block;
+  padding-left: 25px;
+  color: #fafafa;
+  text-decoration: none;
+  position: relative;
+}
+.sidebar__nav-link::before {
+  content: '';
+  width: 19px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.sidebar__nav-link--work::before {
+  height: 15px;
+  background: url('../img/icons/case-icon.svg');
+}
+.sidebar__nav-link--workers::before {
+  height: 18px;
+  background: url('../img/icons/people-icon.svg');
+}
+.sidebar__logout {
+  display: block;
+  font-size: 24px;
+  color: #fafafa;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: auto auto 0;
+  position: relative;
+}
+.sidebar__logout::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  transform: translateY(-50%);
+  background: url('../img/icons/logout-icon.svg');
+}
+.sidebar__logout:hover {
+  text-decoration: underline;
+}
+.main {
+}
+.main__title {
 }
