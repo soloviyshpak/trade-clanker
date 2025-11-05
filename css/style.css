@@ -1,3 +1,4 @@
+/* Глобальные стили */
 *,
 *::before,
 *::after {
@@ -7,6 +8,10 @@ body {
   font-family: 'Ubuntu';
   font-weight: 400;
   font-size: 24px;
+  background: linear-gradient(90deg, #202020 0%, #152331 100%);
+}
+.wrapper {
+  display: flex;
 }
 .logo {
   display: block;
@@ -21,9 +26,14 @@ body {
 .logo:hover {
   scale: 1.1;
 }
-.wrapper {
-  display: flex;
+.title {
+  color: #fafafa;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 48px;
+  text-transform: uppercase;
 }
+/* Стили для сайдбара */
 .sidebar {
   width: 280px;
   height: 100vh;
@@ -144,7 +154,58 @@ body {
 .sidebar__logout:hover {
   text-decoration: underline;
 }
+/* Стили для главной секции */
 .main {
+  padding: 50px 0 0 115px;
 }
 .main__title {
+  margin-bottom: 40px;
+}
+.main__form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 841px;
+}
+.main__form-row {
+  display: flex;
+  flex-direction: column;
+}
+.main__form-row--full {
+  width: 100%;
+}
+.main__form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 100px;
+}
+.main__form-label {
+  color: #fafafa;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.main__form-input {
+  color: #fafafa;
+  padding: 7px 15px;
+  font-size: 25px;
+  border: none;
+  border-radius: 8px;
+  background: #121212;
+}
+.main__form-btn {
+  padding: 5px 24px;
+  font-size: 32px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: #ff0004;
+  color: #fafafa;
+  transition: scale 0.3s;
+}
+.main__form-btn:hover {
+  scale: 1.05;
+}
+.main__form-btn--start {
+  background: #3bb81c;
 }

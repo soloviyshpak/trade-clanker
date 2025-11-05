@@ -36,7 +36,126 @@
         <button class="sidebar__logout">Logout</button>
       </aside>
       <main class="main">
-        <h1 class="main__title">Work</h1>
+        <h1 class="main__title title">Work</h1>
+        <form class="main__form">
+          <!-- Один длинный input -->
+          <div class="main__form-row main__form-row--full">
+            <label class="main__form-label" for="token">Token address</label>
+            <input
+              class="main__form-input"
+              type="text"
+              name="token"
+              id="token"
+            />
+          </div>
+
+          <!-- Сетка из двух колонок -->
+          <div class="main__form-grid">
+            <div class="main__form-row">
+              <label class="main__form-label" for="bnb">BNB amount</label>
+              <input class="main__form-input" type="text" name="bnb" id="bnb" />
+            </div>
+            <div class="main__form-row">
+              <label class="main__form-label" for="buy-gas"
+                >Buy gas price</label
+              >
+              <input
+                class="main__form-input"
+                type="text"
+                name="buy-gas"
+                id="buy-gas"
+              />
+            </div>
+            <div class="main__form-row">
+              <label class="main__form-label" for="sell-gas"
+                >Sell gas price</label
+              >
+              <input
+                class="main__form-input"
+                type="text"
+                name="sell-gas"
+                id="sell-gas"
+              />
+            </div>
+            <div class="main__form-row">
+              <label class="main__form-label" for="dip">Dip (%)</label>
+              <input class="main__form-input" type="text" name="dip" id="dip" />
+            </div>
+            <div class="main__form-row">
+              <label class="main__form-label" for="profit">Take profit</label>
+              <input
+                class="main__form-input"
+                type="text"
+                name="profit"
+                id="profit"
+              />
+            </div>
+            <div class="main__form-row">
+              <label class="main__form-label" for="loss">Stop loss</label>
+              <input
+                class="main__form-input"
+                type="text"
+                name="loss"
+                id="loss"
+              />
+            </div>
+            <div class="main__form-row">
+              <label class="main__form-label" for="tps">TPS</label>
+              <input class="main__form-input" type="text" name="tps" id="tps" />
+            </div>
+            <div class="main__form-row">
+              <label class="main__form-label" for="deadline">Deadline</label>
+              <input
+                class="main__form-input"
+                type="text"
+                name="deadline"
+                id="deadline"
+              />
+            </div>
+            <div class="main__form-row">
+              <label class="main__form-label" for="lvb">LVB</label>
+              <input class="main__form-input" type="text" name="lvb" id="lvb" />
+            </div>
+            <div class="main__form-row">
+              <label class="main__form-label" for="pump">Pump Detector</label>
+              <input
+                class="main__form-input"
+                type="text"
+                name="pump"
+                id="pump"
+              />
+            </div>
+            <div class="main__form-row">
+              <label class="main__form-label" for="pd-time">PD time (s)</label>
+              <input
+                class="main__form-input"
+                type="text"
+                name="pd-time"
+                id="pd-time"
+              />
+            </div>
+            <div class="main__form-row">
+              <label class="main__form-label" for="pd-dip">PD dip (%)</label>
+              <input
+                class="main__form-input"
+                type="text"
+                name="pd-dip"
+                id="pd-dip"
+              />
+            </div>
+            <div class="main__form-row">
+              <button
+                class="main__form-btn main__form-btn--start"
+                type="submit"
+              >
+                Start
+              </button>
+            </div>
+            <div class="main__form-row">
+              <button class="main__form-btn">Stop</button>
+            </div>
+          </div>
+        </form>
       </main>
     </div>
   </body>
