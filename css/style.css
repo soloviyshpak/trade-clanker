@@ -210,3 +210,37 @@ body {
 .main__form-btn--start {
   background: #3bb81c;
 }
+
+/* Стили для таблицы юзеров */
+.main__users {
+  width: 1200px;
+  border-collapse: collapse;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #fafafa;
+}
+
+.main__users-row--head {
+  background-color: #121212;
+  font-weight: bold;
+  text-align: left;
+}
+
+.main__users-cell {
+  padding: 12px 8px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.main__users-button {
+  background: none;
+  border: 1px solid #ccc;
+  padding: 4px 8px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #fafafa;
+  border-radius: 4px;
+}
+
+.main__users-button:hover {
+  background-color: #eee;
+}
