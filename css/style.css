@@ -44,6 +44,7 @@ body {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   position: sticky;
+  top: 0;
 }
 .sidebar__logo {
   margin-bottom: 91px;
